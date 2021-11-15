@@ -126,7 +126,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./assets/iso8601.min.js",
+              "./assets/leaflet.timedimension.min.js"
+            ]
           }
         }
       }
