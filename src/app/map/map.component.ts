@@ -51,11 +51,11 @@ export class MapComponent implements AfterViewInit {
     const layer = e.target;
 
     layer.setStyle({
-      weight: 10,
-      opacity: 1.0,
-      color: '#DFA612',
-      fillOpacity: 1.0,
-      fillColor: '#FAE042'
+      weight: 8,
+      opacity: 1,
+      color: 'amber',
+      fillOpacity: .25,
+      fillColor: 'green'
     });
   }
 
@@ -63,11 +63,11 @@ export class MapComponent implements AfterViewInit {
     const layer = e.target;
 
     layer.setStyle({
-      weight: 3,
+      weight: 5,
       opacity: 0.5,
-      color: '#008f68',
+      color: 'orange',
       fillOpacity: 0.8,
-      fillColor: '#6DB65B'
+      fillColor: 'green'
     });
   }
 
@@ -75,10 +75,10 @@ export class MapComponent implements AfterViewInit {
     const stateLayer = L.geoJSON(this.states, {
       style: (feature) => ({
         weight: 3,
-        opacity: 0.5,
-        color: '#008f68',
+        opacity: 0.75,
+        color: 'orange',
         fillOpacity: 0.8,
-        fillColor: '#6DB65B'
+        fillColor: 'green'
       }),
       
       onEachFeature: (feature, layer) => (
