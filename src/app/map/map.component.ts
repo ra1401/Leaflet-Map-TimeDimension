@@ -80,6 +80,7 @@ export class MapComponent implements AfterViewInit {
         fillOpacity: 0.8,
         fillColor: '#6DB65B'
       }),
+      
       onEachFeature: (feature, layer) => (
         layer.on({
           mouseover: (e) => (this.highlightFeature(e)),
